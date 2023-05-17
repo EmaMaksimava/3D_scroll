@@ -9,6 +9,7 @@
   --gutter: 30px;
   --small-side: 26;
   --big-side: 36;
+  --depth: 4000px;
 }
 
 @font-face {
@@ -29,6 +30,7 @@ body {
   font-size: calc(var(--index) * .8); /* .8 - стандартный размер от браузера */
   font-family: raleway_100, sans-serif;
   line-height: 1.7;
+  height: var(--depth);
 }
 
 .container {
@@ -51,4 +53,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity .75s ease;
+  will-change: transform;
 }
