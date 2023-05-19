@@ -10,7 +10,14 @@
   --small-side: 26;
   --big-side: 36;
   --depth: 4000px;
-  --transition: .75 cubic-bezier(0.075, 0.5, 0, 1);
+  --transition: .55s cubic-bezier(0.075, 0.5, 0, 1);
+}
+
+body {
+	scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
 }
 
 @font-face {
