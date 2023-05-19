@@ -28,3 +28,26 @@ window.scrollTo(0, 1);
 
 // Audio
 
+let soundButton = document.querySelector('.sound_button'),
+    audioContent = document.querySelector('.audio_content');
+
+function turnAudio() {
+  if(soundButton.classList.contains('paused') ) {
+    audioContent.pause();
+  } else {
+    audioContent.play();
+  }
+};
+
+soundButton.addEventListener('click', (e) => {
+  soundButton.classList.toggle('paused');
+  turnAudio();
+})
+
+window.onfocus = turnAudio();
+
+window.onblur = function() {
+  audioContent.pause();
+}
+
+
