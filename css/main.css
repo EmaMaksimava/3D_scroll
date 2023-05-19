@@ -103,3 +103,22 @@ video.frame-media__left {
 video.frame-media__right {
   left: calc(var(--big-side) / 2 * var(--index) + var(--gutter));
 }
+
+.text-left {
+  position:relative;
+  right: 20vw;
+}
+
+.text-right > * {
+  position:relative;
+  left: 20vw;
+}
+
+.frame h3 {
+  font-size: calc(var(--index) * 3);
+}
+
+.frame p {
+  max-width: 30vw;
+  margin-top: 4vh;
+}
